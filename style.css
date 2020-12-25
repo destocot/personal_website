@@ -82,7 +82,7 @@ html {
     font-size: 16px;
 }
 
-/* Portrait and Landscape */
+/* Portrait and Landscape Mobile */
 @media screen and (max-width: 600px)  {
       .grid {
           display: grid;
