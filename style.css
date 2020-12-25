@@ -24,7 +24,7 @@ html {
 
 /* top left*/
 
-img {
+.topleft img {
     width: 200px;
     height: auto;
     display: block;
@@ -75,12 +75,46 @@ img {
     color: white;
 }
 
-
-
-
 /* bottom right */
 
 .bottomright {
     border-top: 3px solid #4cb69f;
     font-size: 16px;
+}
+
+/* Portrait and Landscape */
+@media screen and (max-width: 600px)  {
+      .grid {
+          display: grid;
+          grid-template-columns: 2fr;
+          grid-row-gap: 0px;
+          margin: 0 auto;
+          /*border: 2px solid blue;*/
+      }
+
+      .panel {
+          margin: 0 auto;
+          padding: 5px;
+      }
+
+      .topleft img {
+          width: 150px;
+      }
+
+      .topright {
+          text-align: center;
+      }
+
+      .bottomleft {
+          width: max-content;
+      }
+
+      .bottomleft ul li {
+          display: inline;
+          padding: 5px;
+      }
+
+      .bottomleft ul li a {
+          line-height: 1.5;
+      }
 }

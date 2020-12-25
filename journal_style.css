@@ -43,6 +43,7 @@ html {
     grid-row: 1/4;
     height: 100%;
     padding: 0px 10px;
+    font-size: 16px;
 }
 
 .topright .journal_entry h3 {
@@ -52,6 +53,7 @@ html {
 .topright .journal_entry p {
     margin: 0;
     padding: 0;
+    text-align: left;
 }
 
 /*bottom left*/
@@ -84,4 +86,46 @@ html {
 
 .bottomleft .active a {
     color: white;
+}
+
+/* Portrait and Landscape */
+@media screen and (max-width: 600px)  {
+      .grid {
+          display: grid;
+          grid-template-columns: 2fr;
+          grid-row-gap: 0px;
+          margin: 0 auto;
+          /*border: 2px solid blue;*/
+      }
+
+      .panel {
+          margin: 0 auto;
+          padding: 5px;
+      }
+
+      .topleft img {
+          width: 150px;
+          grid-row: 1/2;
+      }
+
+      .topright {
+          text-align: center;
+          grid-row: 3/4;
+          grid-column: 1/2;
+          margin: 0 10px;
+      }
+
+      .bottomleft {
+          width: max-content;
+          grid-row: 2/3;
+      }
+
+      .bottomleft ul li {
+          display: inline;
+          padding: 5px;
+      }
+
+      .bottomleft ul li a {
+          line-height: 1.5;
+      }
 }
