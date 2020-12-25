@@ -72,15 +72,18 @@ ul {
 
 ul li {
     margin: 5px 0px;
+    padding: 2px 0px;
 }
 
 ul li a {
     text-decoration: none;
     color: black;
-    padding: 2px 65px;
 }
 
 .active {
     background-color: #4cb69f;
+}
+
+.active a {
     color: white;
 }

@@ -51,25 +51,31 @@ img {
     text-align: center;
 }
 
-ul {
+.bottomleft ul {
     list-style-type: none;
     padding: 0;
 }
 
-ul li {
+.bottomleft ul li {
     margin: 5px 0px;
+    padding: 2px 0px;
 }
 
-ul li a {
+.bottomleft ul li a {
     text-decoration: none;
     color: black;
-    padding: 2px 65px;
 }
 
-.active {
+.bottomleft .active {
     background-color: #4cb69f;
+}
+
+.bottomleft .active a {
     color: white;
 }
+
+
+
 
 /* bottom right */
 
