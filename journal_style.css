@@ -1,5 +1,6 @@
 html {
     background-color: #f5f5f5;
+    background-image: url("https://www.transparenttextures.com/patterns/old-mathematics.png");
     font-family: "Computer Modern Sans", sans-serif;
     /*color: #4cb69f; mint */
     /*color: #201d3a; deep purple */
@@ -8,82 +9,79 @@ html {
 
 .grid {
     display: grid;
-    grid-template-columns: 3fr 4fr;
+    grid-template-columns: 2fr 6fr;
     grid-column-gap: 70px;
     grid-row-gap: 40px;
     margin: 40px auto 0 auto;
     max-width: calc(360px + 480px + 120px);
-    /* border: 2px solid blue; */
-    grid-template-areas:
-        "a c"
-        "b c"
+    /*border: 2px solid blue;*/
 }
 
 .panel {
-    /* border: 2px solid red; */
+    /*border: 2px solid red;*/
     margin: 0 15px;
 }
 
 /* top left*/
 
-.topleft {
-    grid-area: a;
-}
-
-img {
+.topleft img {
     width: 200px;
     height: auto;
     display: block;
     margin: 0;
     border-radius: 5px;
+    grid-column: 1/2;
+    grid-row: 2/3;
 }
 
 /* top right */
 
 .topright {
-    grid-area: c;
-    text-align: center;
-    line-height: 2.0;
-    padding: 0;
+    background-color: rgba(76, 182, 159, 0.25);
+    border: 2px solid #4cb69f;
+    grid-column: 2/3;
+    grid-row: 1/4;
     height: 100%;
-    border-left: 2px solid #4cb69f;
+    padding: 0px 10px;
 }
 
-.topright h4 {
+.topright .journal_entry h3 {
+    margin: 6px;
+}
+
+.topright .journal_entry p {
     margin: 0;
-    font-weight: normal;
-    width: 95%;
-    margin-left: 5%;
-    background-color: rgba(32, 29, 58, 0.25);
+    padding: 0;
 }
 
 /*bottom left*/
 
 .bottomleft {
-    grid-area: b;
     width: 200px;
     text-align: center;
+    grid-column: 1/2;
+    grid-row: 2/3;
 }
 
-ul {
+.bottomleft ul {
     list-style-type: none;
     padding: 0;
 }
 
-ul li {
+.bottomleft ul li {
     margin: 5px 0px;
     padding: 2px 0px;
 }
 
-ul li a {
+.bottomleft ul li a {
     text-decoration: none;
     color: black;
 }
 
-.active {
+.bottomleft .active {
     background-color: #4cb69f;
 }
 
-.active a {
+.bottomleft .active a {
     color: white;
 }
