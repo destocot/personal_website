@@ -1,0 +1,59 @@
+<html>
+
+<head>
+    <link href="tutoring-style.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.rawgit.com/dreampulse/computer-modern-web-font/master/fonts.css">
+</head>
+
+<body>
+
+    <div class="grid">
+
+        <div class="panel topleft">
+            <script language="JavaScript">
+                /*
+                Random Image Script- By JavaScript Kit (http://www.javascriptkit.com) 
+                Over 400+ free JavaScripts here!
+                Keep this notice intact please
+                */
+
+                function random_imglink() {
+                    var myimages = new Array()
+                    //specify random images below. You can have as many as you wish
+                    myimages[1] = "images/lotus.jpg"
+                    myimages[2] = "images/lotus2.jpg"
+                    myimages[3] = "images/lotus3.jpg"
+
+                    var ry = Math.floor(Math.random() * myimages.length)
+                    if (ry == 0)
+                        ry = 1
+                    document.write('<img src="' + myimages[ry] + '" border=0>')
+                }
+                random_imglink()
+            </script>
+        </div>
+
+        <div class="panel topright ">
+            <h4 style="margin-top: 150px;"><b>WOULD YOU LIKE HELP WITH MATH?</b></h4>
+                <h4>COLLEGE ALGEBRA || PRE-CALCULUS</h4>
+                    <h4>$20/hr [First Hour Free]</h4>
+                      
+        </div>
+
+        <div class="panel bottomleft">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Notes</a></li>
+                <li><a class="active" href="tutoring.html">Tutoring</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    </div>
+
+</body>
+
+
+</html>

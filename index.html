@@ -1,0 +1,64 @@
+<html>
+
+<head>  
+    <link href="style.css" rel="stylesheet">  
+    <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/dreampulse/computer-modern-web-font/master/fonts.css">
+</head>
+
+<body>
+    
+    <div class="grid">
+    
+        <div class="panel left">
+            <script language="JavaScript">
+                /*
+                Random Image Script- By JavaScript Kit (http://www.javascriptkit.com) 
+                Over 400+ free JavaScripts here!
+                Keep this notice intact please
+                */
+                
+                function random_imglink(){
+                var myimages=new Array()
+                //specify random images below. You can have as many as you wish
+                myimages[1]="images/lotus.jpg"
+                myimages[2]="images/lotus2.jpg"
+                myimages[3]="images/lotus3.jpg"
+                
+                var ry=Math.floor(Math.random()*myimages.length)
+                if (ry==0)
+                ry=1
+                document.write('<img src="'+myimages[ry]+'" border=0>')
+                }
+                random_imglink()
+                </script>
+        </div>
+        
+        <div class="panel topright ">
+            <h4><b>Khurram Ali</b></h2>
+            <h4>Undergraduate Student</h2>
+            <h4>Mathematics Major</h2>
+            <h4>Brooklyn College / CUNY</h2>
+        </div>
+
+        <div class="panel bottomleft">
+            <ul>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="#">Notes</a></li>
+                <li><a href="tutoring.html">Tutoring</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        
+        <div class="panel bottomright">
+            <p>Hello! I am an undegraduate student at Brooklyn College of the City University of New York. I am currently majoring in Mathematics with a minor in English.</p>
+
+            <p>Currently, I am taking an Introduction to Topology course while studying for the GRE. I am also in the middle of applying to graduate and teacher residency programs in Math Education.
+            </p>
+        </div>
+    
+    </div>
+
+</body>
+
+
+</html>
